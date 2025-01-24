@@ -4,5 +4,24 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+{% raw %}
+<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2634564" style='border:none;'></iframe>
+{% endraw %}
+
+I'm learning about networking, cyber security and anything computing related. I
+try to learn as much as possible everyday but I also very much appreciate a
+balance of quality family time. 
+
+Looking to work remotely to maximise that family time and continue my studies.
+Currently working towards the CompTIA Security+ and Network+ exams as well as
+the Certified Ethical Hacker (CEH) exam. Once time permits I shall sit the Cisco
+Certified Network Associate (CCNA) exam as I have already attended the course.
+
+Learning about networking and cybersecurity has been a great learning path so
+far and the journey has shown that there is ***a lot*** to learn. This blog is a
+way for me to record my notes, practice a bit of web and markdown coding, and if
+I'm lucky some others may even benefit from them. 
+
+If you're on Try Hack Me, hit me up with a friend request. 
+<!-- > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page. -->
+<!-- {: .prompt-tip } -->
