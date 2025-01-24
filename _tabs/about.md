@@ -5,7 +5,9 @@ order: 4
 ---
 
 {% raw %}
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2634564" style='border:none;'></iframe>
+<div class="iframe-container">
+  <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2634564" class="responsive-iframe" title="TryHackMe Badge"></iframe>
+</div>
 {% endraw %}
 
 I'm learning about networking, cyber security and anything computing related. I
@@ -22,6 +24,6 @@ far and the journey has shown that there is ***a lot*** to learn. This blog is a
 way for me to record my notes, practice a bit of web and markdown coding, and if
 I'm lucky some others may even benefit from them. 
 
-If you're on Try Hack Me, hit me up with a friend request. 
+If you're on Try Hack Me, hit me up with a friend request.
 <!-- > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page. -->
 <!-- {: .prompt-tip } -->
