@@ -5,9 +5,14 @@ order: 4
 ---
 
 {% raw %}
-<div class="iframe-container">
-  <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2634564" class="responsive-iframe" title="TryHackMe Badge"></iframe>
-</div>
+  <iframe
+    src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2634564"
+    width="326"
+    height="82"
+    frameborder="0"
+    scrolling="no"
+    style="border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+  </iframe>
 {% endraw %}
 
 I'm learning about networking, cyber security and anything computing related. I
