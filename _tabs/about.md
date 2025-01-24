@@ -5,20 +5,13 @@ order: 4
 ---
 
 {% raw %}
-<div style="text-align: center;">
+<div class="badge-wrapper">
   <iframe
     src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2634564"
-    width="327"
-    height="84"
     frameborder="0"
     scrolling="no"
-    style="
-      border-radius: 12px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-      background-color: transparent;
-    "
-  >
-  </iframe>
+    title="TryHackMe Badge"
+  ></iframe>
 </div>
 {% endraw %}
 
