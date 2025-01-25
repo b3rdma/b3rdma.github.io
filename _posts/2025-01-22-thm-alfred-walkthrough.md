@@ -2,20 +2,29 @@
 title: THM Room Walkthrough - Alfred
 date: '2025-01-22 21:35:00 +0000'
 author: b3rdma
-categories: [Hacking, Try Hack Me]
-tags: [nmap, enumeration, privilege escalation, reverse shell, metasploit]
+categories:
+  - Hacking
+  - Try Hack Me
+tags:
+  - nmap
+  - enumeration
+  - privilege escalation
+  - reverse shell
+  - metasploit
 media_subpath: /img/alfred/
 ---
+## Contents
+### Table of contents
 
-<!-- toc:start -->
+<!-- toc -->
 
 - [Task 1 - Initial Access](#task-1---initial-access)
-  * [Initial Recon - NMAP Scan Results](#initial-recon---nmap-scan-results)
-  * [Enumeration](#enumeration)
+- [Initial Recon - NMAP Scan Results](#initial-recon---nmap-scan-results)
+- [Enumeration](#enumeration)
 - [Task 2 - Switching Shells](#task-2---switching-shells)
 - [Task 3 - Privilege Escalation](#task-3---privilege-escalation)
 
-<!-- toc:end -->
+<!-- tocstop -->
 
 ## Task 1 - Initial Access
 
@@ -186,4 +195,9 @@ even interesting. Feedback is always welcome but please do view this in the
 context that these are basically my learning notes. Definitely let me know if
 there are errors, especially in relation to techniques/tools used. 
 
-Thank you and Godspeed. 
+Thank you and Godspeed.
+
+
+
+
+
