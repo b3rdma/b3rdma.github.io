@@ -12,8 +12,11 @@ order: 4
     scrolling="no"
     title="TryHackMe Badge"
   ></iframe>
+  <br />
 </div>
 {% endraw %}
+
+---
 
 I'm learning about networking, cyber security and anything computing related. I
 try to learn as much as possible everyday but I also very much appreciate a
