@@ -11,6 +11,7 @@ tags:
   - privilege escalation
   - reverse shell
   - metasploit
+description: THM room Alfred walkthrough - good room for rev shell/Metasploit practice
 media_subpath: /img/alfred/
 ---
 ## Contents
@@ -196,6 +197,8 @@ context that these are basically my learning notes. Definitely let me know if
 there are errors, especially in relation to techniques/tools used. 
 
 Thank you and Godspeed.
+
+
 
 
 

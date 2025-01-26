@@ -9,6 +9,7 @@ tags:
   - nmap
   - enumeration
   - privilege escalation
+description: My notes on NMAP from the THM room NMAP Basics
 ---
 ## Contents
 ### Table of contents
@@ -122,6 +123,7 @@ Summary of other flags used:
 - `-n` => No DNS lookup
 - `-R` => Reverse-DNS lookup for all hosts
 - `-sn` => host discovery only
+
 
 
 

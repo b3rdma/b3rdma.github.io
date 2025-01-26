@@ -10,6 +10,7 @@ tags:
   - enumeration
   - exploit-db
   - burp suite
+description: Part one of the THM room HackPark walkthrough.
 ---
 # Part 1  
 ## Contents
@@ -109,5 +110,6 @@ That is Task 3 complete, now on to Task 4. I will run the exploit and start Task
 ## Task 4 - Windows Privilege Escalation
 
 To be continued in Part 2 when I get the time to spin up the room again. Watch this space...
+
 
 
