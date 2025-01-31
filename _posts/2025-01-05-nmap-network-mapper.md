@@ -90,6 +90,7 @@ Downside is that many firewalls block ICMP. Consider using ICMP Timestamp or ICM
 ```bash
 sudo nmap -PS -sn 10.10.210.6/24
 ```
+{: .nolineno }
 
 The NMAP `-PS` flag means only scan with TCP SYN packets, `-sn` means scan only on local network, no DNS lookup.
 The NMAP `-PA` flag means only scan with TCP ACK packets, `-sn` means scan only on local network, no DNS lookup.
@@ -98,9 +99,10 @@ For both the `-PS` and `-PA` flags, ports can be specified as well. E.g., `-PA21
 With UDP, a response is not expected; however, if the port is closed, we expect to get an ICMP port unreachable packet which inicates the target system is up and available.
 Syntax is as follows:
 
-```zsh
+```bash
 sudo nmap -PU -sn 10.10.210.6/24
 ```
+{: .nolineno }
 
 Port specification is similar to TCP as shown above.
 
@@ -123,6 +125,10 @@ Summary of other flags used:
 - `-n` => No DNS lookup
 - `-R` => Reverse-DNS lookup for all hosts
 - `-sn` => host discovery only
+
+
+
+
 
 
 
