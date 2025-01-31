@@ -32,7 +32,7 @@ description: My notes on NMAP from the THM room NMAP Basics
 
 ## NMAP Links
 
-- [NMAP NSE](https://nmap.org/book/nse-usage.html) - Nmap Scripting Engine
+- [NMAP NSE](https://nmap.org/book/nse-usage.html) - NMAP Scripting Engine
 - [NMAP Firewall/IDS Evasion](https://nmap.org/book/man-bypass-firewalls-ids.html) - Flags used to bypass firewalls and IDS
 
 ## What is NMAP?
@@ -125,6 +125,7 @@ Summary of other flags used:
 - `-n` => No DNS lookup
 - `-R` => Reverse-DNS lookup for all hosts
 - `-sn` => host discovery only
+
 
 
 
