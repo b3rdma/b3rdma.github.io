@@ -11,6 +11,10 @@ tags:
   - privilege escalation
 description: My notes on NMAP from the THM room NMAP Basics
 ---
+> These are my notes from the THM NMAP Introduction room. No teaching in this
+> post, just personal notes on basic NMAP usage.
+{: .prompt-warning }
+
 ## Contents
 ### Table of contents
 
@@ -25,10 +29,6 @@ description: My notes on NMAP from the THM room NMAP Basics
 - [Summary of Commands](#summary-of-commands)
 
 <!-- tocstop -->
-
-> These are my notes from the THM NMAP Introduction room. No teaching in this
-> post, just personal notes on basic NMAP usage.
-{: .prompt-info }
 
 ## NMAP Links
 
@@ -123,6 +123,9 @@ Summary of other flags used:
 - `-n` => No DNS lookup
 - `-R` => Reverse-DNS lookup for all hosts
 - `-sn` => host discovery only
+
+
+
 
 
 
