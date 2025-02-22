@@ -11,8 +11,8 @@ author: b3rdma
 categories:
   - Linux
   - Privilege Escalation
-date: '2025-01-31 20:22:01 +0000'
-description: Some notes from the THM Linux Privilege Escalation room.
+date: '2025-02-01 20:22:01 +0000'
+description: My notes from the THM Linux Privilege Escalation room
 title: Linux Privilege Escalation
 ---
 ## Contents
@@ -24,14 +24,14 @@ title: Linux Privilege Escalation
   * [Useful Commands](#useful-commands)
 - [Automated Enumeration Tools](#automated-enumeration-tools)
 - [Get The Fuck Out Bins](#get-the-fuck-out-bins)
-  * [Cat Alternative](#cat-alternative)
-  * [Check for SUID/GUID](#check-for-suidguid)
-  * [Unshadow](#unshadow)
-  * [Capabilities](#capabilities)
-  * [Find Writable Folders](#find-writable-folders)
-  * [Path Env Variable](#path-env-variable)
-  * [Enumerate mountable network shares](#enumerate-mountable-network-shares)
-  * [Create and Compile](#create-and-compile)
+- [Cat Alternative](#cat-alternative)
+- [Check for SUID/GUID](#check-for-suidguid)
+- [Unshadow](#unshadow)
+- [Capabilities](#capabilities)
+- [Find Writable Folders](#find-writable-folders)
+- [Path Env Variable](#path-env-variable)
+- [Enumerate mountable network shares](#enumerate-mountable-network-shares)
+- [Create and Compile](#create-and-compile)
 
 <!-- tocstop -->
 
@@ -111,7 +111,7 @@ find . -exec /bin/sh \; -quit
 ```
 {: .nolineno }
 
-### Cat Alternative
+## Cat Alternative
 
 Excellent way to `cat` a file if privilege does not allow use of cat; try `base64` in the following way:
 
@@ -120,7 +120,7 @@ base64 /etc/shadow | base64 -d
 ```
 {: .nolineno }
 
-### Check for SUID/GUID
+## Check for SUID/GUID
 
 Use the command below to see what files have the SUID or GUID bit set:
 
@@ -131,12 +131,12 @@ find / -type f -perm -04000 -ls 2>/dev/null
 
 Good practice is to compare the executables from the generated list with GTFOBins. Check for things like `base64` and `nano` when `cat` returns permission denied. 
 
-### Unshadow
+## Unshadow
 
 Use the `unshadow` tool with *John the Ripper* to crack passwords from the `/etc/shadow` file and the `/etc/passwd` file.
 
 ``` bash
-unshadow passwd.txt shadow.txt > passwords.txt
+unshadow passwd.txt shadow.txt >passwords.txt
 ```
 {: .nolineno }
 
@@ -148,7 +148,7 @@ john --wordlist=/usr/shares/wordlists/rockyou.txt passwords.txt
 > I have recently compared the performance of _John the Ripper_ with _Hashcat_ on my MBP. I cannot believe how damned fast _Hashcat_ is compared to _John_. Whenever I can, in future I shall always be using _Hashcat_ as a first choice. It blasted _John_ out of the water. In one test it cracked a BCrypt hash in seconds compared to _John_ taking what felt like a lifetime. If you're a fan of _John_ and have not really looked at _Hashcat_, I recommend you do.
 {: .prompt-tip }
 
-### Capabilities
+## Capabilities
 
 Use of _capabilities_ can be extremely useful for getting root privileges
 
@@ -164,7 +164,7 @@ The above command will show which executables have elevated capabilities. Use th
 ```
 {: .nolineno }
 
-### Find Writable Folders
+## Find Writable Folders
 
 When finding writable folders, the output can be very long. Use the following to tidy up the output:
 
@@ -187,7 +187,7 @@ find / -writable 2>*dev/null | cut -d "*" -f 2,3 | grep -v proc | sort -u
 ```
 {: .nolineno }
 
-### Path Env Variable
+## Path Env Variable
 
 Add writable folders to the `$PATH` environment variable:
 
@@ -203,7 +203,7 @@ export PATH=$PATH:/tmp
 ```
 {: .nolineno }
 
-### Enumerate mountable network shares
+## Enumerate mountable network shares
 
 ``` bash
 showmount -e <target_ip>
@@ -218,11 +218,11 @@ mkdir /tmp/temp
 {: .nolineno }
 
 ``` bash
-mount -o rw <target_ip>:/tmp /tmp/temp
+mount -o rw /tmp/temp <target_ip >:/tmp
 ```
 {: .nolineno }
 
-### Create and Compile
+## Create and Compile
 
 Create and compile an executable and then set the SUID bit
 
@@ -250,17 +250,5 @@ gcc nfs.c -o nfs -w
 chmod +s nfs
 ```
 {: .nolineno }
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -13,9 +13,10 @@ description: My notes on NMAP from the THM room NMAP Basics
 ---
 > These are my notes from the THM NMAP Introduction room. No teaching in this
 > post, just personal notes on basic NMAP usage.
-{: .prompt-warning }
+> {: .prompt-warning }
 
 ## Contents
+
 ### Table of contents
 
 <!-- toc -->
@@ -37,7 +38,10 @@ description: My notes on NMAP from the THM room NMAP Basics
 
 ## What is NMAP?
 
-NMAP is used for mapping networks, identifying live hosts, and discovering running services. NMAP's scripting engine can further extend its functionality, from fingerprinting services to exploiting vulnerabilities.
+NMAP is used for mapping networks, identifying live hosts, and discovering
+running services. NMAP's scripting engine can further extend its functionality,
+from fingerprinting services to exploiting vulnerabilities.
+
 - A NMAP scan usually goes through the following steps:
 
   1. Enumerate targets
@@ -59,50 +63,71 @@ NMAP is used for mapping networks, identifying live hosts, and discovering runni
 
 ## Host Discovery
 
-There are various ways to discover online hosts. When no host discovery options are provided, NMAP uses the following default options:
+There are various ways to discover online hosts. When no host discovery options
+are provided, NMAP uses the following default options:
 
-  1. When a _privileged_ user tries to scan targets on a local network (Ethernet), NMAP will use ARP from Link Layer.
-  2. When a _privileged_ user tries to scan targets outside the local network, NMAP will use ICMP echo requests, TCP ACK to port 80, TCP SYN to port 443, and ICMP timestamp request.
-  3. When an _unprivileged_ user tries to scan targets outside the local network, NMAP resorts to a TCP 3-way handshake by sending SYN packets to port 80 and port 443.
+1. When a _privileged_ user tries to scan targets on a local network (Ethernet),
+   NMAP will use ARP from Link Layer.
+2. When a _privileged_ user tries to scan targets outside the local network,
+   NMAP will use ICMP echo requests, TCP ACK to port 80, TCP SYN to port 443,
+   and ICMP timestamp request.
+3. When an _unprivileged_ user tries to scan targets outside the local network,
+   NMAP resorts to a TCP 3-way handshake by sending SYN packets to port 80 and
+   port 443.
 
 ### NMAP host discovery using ARP
 
+<!-- prettier-ignore-start -->
 ```zsh
 sudo nmap -PR -sn 10.10.210.6/24
 ```
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
-Check details of the flags; `-PR` means only scan with ARP, `-sn` means scan only on local network, no DNS lookup.
-Use in conjunction with WireShark to capture ARP packet details. An alternative is `arp-scan` which is installed.
+Check details of the flags; `-PR` means only scan with ARP, `-sn` means scan
+only on local network, no DNS lookup. Use in conjunction with WireShark to
+capture ARP packet details. An alternative is `arp-scan` which is installed.
 
 ### NMAP host discovery using ICMP
 
+<!-- prettier-ignore-start -->
 ```bash
 sudo nmap -PE -sn 10.10.210.6/24
 ```
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
-This method, `-PE` means only scan with ICMP echo request, `-sn` means scan only on local network, no DNS lookup.
-Downside is that many firewalls block ICMP. Consider using ICMP Timestamp or ICMP Address Mask instead. Timestamp requests use the NMAP flag `-PP` and address mask requests use the NMAP flag `-PM`.
+This method, `-PE` means only scan with ICMP echo request, `-sn` means scan only
+on local network, no DNS lookup. Downside is that many firewalls block ICMP.
+Consider using ICMP Timestamp or ICMP Address Mask instead. Timestamp requests
+use the NMAP flag `-PP` and address mask requests use the NMAP flag `-PM`.
 
 ### NMAP host discovery using TCP and UDP
 
+<!-- prettier-ignore-start -->
 ```bash
 sudo nmap -PS -sn 10.10.210.6/24
 ```
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
-The NMAP `-PS` flag means only scan with TCP SYN packets, `-sn` means scan only on local network, no DNS lookup.
-The NMAP `-PA` flag means only scan with TCP ACK packets, `-sn` means scan only on local network, no DNS lookup.
-For both the `-PS` and `-PA` flags, ports can be specified as well. E.g., `-PA21`, `-PA21-25`, and `-PA80,443,8080` are all valid port definitions. If no port specified, port 80 will be scanned.
+The NMAP `-PS` flag means only scan with TCP SYN packets, `-sn` means scan only
+on local network, no DNS lookup. The NMAP `-PA` flag means only scan with TCP
+ACK packets, `-sn` means scan only on local network, no DNS lookup. For both the
+`-PS` and `-PA` flags, ports can be specified as well. E.g., `-PA21`,
+`-PA21-25`, and `-PA80,443,8080` are all valid port definitions. If no port
+specified, port 80 will be scanned.
 
-With UDP, a response is not expected; however, if the port is closed, we expect to get an ICMP port unreachable packet which inicates the target system is up and available.
-Syntax is as follows:
+With UDP, a response is not expected; however, if the port is closed, we expect
+to get an ICMP port unreachable packet which inicates the target system is up
+and available. Syntax is as follows:
 
+<!-- prettier-ignore-start -->
 ```bash
 sudo nmap -PU -sn 10.10.210.6/24
 ```
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
 Port specification is similar to TCP as shown above.
 
@@ -110,8 +135,8 @@ Port specification is similar to TCP as shown above.
 
 Summary of command-line options covered above:
 
-| Scan Type              | Example Command                              |
-| :--------------------- | :------------------------------------------- |
+| Scan Type              | Example Command                               |
+| :--------------------- | :-------------------------------------------- |
 | ARP Scan               | `sudo nmap -PR -sn <TARGET_IP>/24`            |
 | ICMP Echo Scan         | `sudo nmap -PE -sn <TARGET_IP>/24`            |
 | ICMP Timestamp Scan    | `sudo nmap -PP -sn <TARGET_IP>/24`            |
@@ -125,18 +150,4 @@ Summary of other flags used:
 - `-n` => No DNS lookup
 - `-R` => Reverse-DNS lookup for all hosts
 - `-sn` => host discovery only
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

