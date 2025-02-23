@@ -13,8 +13,6 @@ tags:
   - enumeration
   - privilege escalation
 ---
-# NMAP Advanced Port Scans
-
 <!-- prettier-ignore-start -->
 > These are my notes from the THM NMAP Basic Port Scans room. No teaching in
 > this post, just personal notes on basic NMAP usage.
