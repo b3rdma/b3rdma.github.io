@@ -46,7 +46,7 @@ useful in particular network setups.
 
 - The Null Scan does not set any flag; all six flag bits are set to zero. This
   scan is chosen using the flag `nmap -sN` (Null Scan).
-- No reply should be recieved, so a lack of reply in a null scan means _either_
+- No reply should be received, so a lack of reply in a null scan means _either_
   that the port is open or a firewall is blocking the packet.
 - If the port is closed, a packet with RST bit set will be sent back to the
   host.
