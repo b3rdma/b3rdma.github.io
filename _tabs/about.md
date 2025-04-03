@@ -30,9 +30,16 @@ awarded the use of the logo.
 ![CompTIA Security Plus CE logo - white](../assets/img/SecurityPlus_Logo_Certified_CE_White.png){: width="700" height="400" }
 _The CompTIA Security+ CE logo in white_
 
+As of 2 April 2025 I passed the ISC2 CC exam and am awaiting the official
+certification to be verified. I shall use this as a steppingstone to advance
+in the field of Governance, Risk, and Compliance (GRC). I will be working
+towards getting the CISSP certification/associate whilst continuing to study for
+other upcoming exams.
+
 Currently working towards the CompTIA Network+ exam and the Certified Ethical
-Hacker (CEH) exam. Once time permits I shall sit the Cisco Certified Network
-Associate (CCNA) exam as I have already attended the course.
+Hacker (CEH) exam. I am considering to prepare for the Cisco Certified Network
+Associate (CCNA) exam as I have already attended the course; my focus however,
+will be more GRC aligned.
 
 Learning about networking and cybersecurity has been a great learning path so
 far and the journey has shown that there is **_a lot_** to learn. This blog is a
