@@ -57,7 +57,7 @@ certification/associate whilst continuing to study for other upcoming exams.
   <div data-iframe-width="300" data-iframe-height="250"
   data-share-badge-id="7c3ff811-5ce3-4000-a074-deda67568633"
   data-share-badge-host="https://www.credly.com"></div><script
-  type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
 
   </div>
 </div>
