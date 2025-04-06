@@ -27,7 +27,7 @@ I love to learn and I'm learning about networking, cybersecurity, and anything
 computing related. I try to learn as much as possible everyday but I also very
 much appreciate a balance of quality family time.
 
-After deciding to transiton to a career in cybersecurity, I initially thought
+After deciding to transition to a career in cybersecurity, I initially thought
 the idea of being an ethical hacker sounded great and it really is very
 interesting. However, with my background in Risk Management, Mitigation and
 ensuring adherence to policy/governance, I find myself really enjoying learning
