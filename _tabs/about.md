@@ -38,8 +38,8 @@ continue developing myself professionally.
 
 As of 12 March 2025 I am officially CompTIA Security+ certified.
 
-![CompTIA Security Plus CE logo - white](../assets/img/SecurityPlus_Logo_Certified_CE_White.png){: width="350" height="200" }
-_The CompTIA Security+ CE logo in white_
+![CompTIA Security Plus CE logo](../assets/img/SecurityPlus_Logo_Certified_CE.png){: width="350" height="200" }
+_The CompTIA Security+ CE logo_
 
 As of 4 April 2025 I officially hold the ISC2 Certified in Cybersecurity
 certification. Clink on the image below and it will verify that the
