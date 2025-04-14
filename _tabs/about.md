@@ -36,7 +36,7 @@ the Governance, Risk, and Compliance (GRC) side of cybersecurity.
 Looking to work remotely as much as possible to maximise that family time and
 continue developing myself professionally.
 
-As of 12 March 2025 I am officially CompTIA Security+ certified.
+As of 12 March 2025 I am officially CompTIA Security+ certified. Link to [Credly profile](https://www.credly.com/users/steve-muir.ee8d03c6) to confirm certification.
 
 ![CompTIA Security Plus CE logo](../assets/img/SecurityPlus_Logo_Certified_CE.png){: width="350" height="200" }
 _The CompTIA Security+ CE logo_
