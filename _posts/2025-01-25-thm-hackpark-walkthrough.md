@@ -16,8 +16,6 @@ description: Part one of the THM room HackPark walkthrough.
 
 ## Contents
 
-### Table of contents
-
 <!-- toc -->
 
 - [Task 1 - Deploy the Machine](#task-1---deploy-the-machine)

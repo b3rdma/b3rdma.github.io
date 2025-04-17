@@ -16,8 +16,6 @@ media_subpath: /img/alfred/
 ---
 ## Contents
 
-### Table of contents
-
 <!-- toc -->
 
 - [Task 1 - Initial Access](#task-1---initial-access)

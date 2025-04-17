@@ -14,11 +14,7 @@ tags:
   - vpr
   - exploit-db
 ---
-# Vulnerabilities 101
-
 ## Contents
-
-### Table of contents
 
 <!-- toc -->
 

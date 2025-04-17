@@ -17,8 +17,6 @@ description: My notes on NMAP from the THM room NMAP Basics
 
 ## Contents
 
-### Table of contents
-
 <!-- toc -->
 
 - [NMAP Links](#nmap-links)

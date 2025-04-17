@@ -21,8 +21,6 @@ tags:
 
 ## Contents
 
-### Table of contents
-
 <!-- toc -->
 
 - [TCP Null Scan, FIN Scan and XMAS Scan.](#tcp-null-scan-fin-scan-and-xmas-scan)

@@ -18,8 +18,6 @@ published: null
 
 ## Contents
 
-### Table of contents
-
 <!-- toc -->
 
 - [Task 3 - Compromise the machine](#task-3---compromise-the-machine)
