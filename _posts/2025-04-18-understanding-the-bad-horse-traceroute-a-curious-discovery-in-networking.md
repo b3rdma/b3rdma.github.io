@@ -158,7 +158,7 @@ limit:
 - On **Windows**:
 
 <!-- prettier-ignore-start -->
-```cmd
+```bash
 tracert -h 60 bad.horse
 ```
 {: .nolineno }
