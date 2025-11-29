@@ -4,8 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## About Me
-
 Hello, I am Steve 'Zed' Muir. I am married to my wonderful best friend, Yasmin
 and we have a beautiful boy, Stanley.
 
