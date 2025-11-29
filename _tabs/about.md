@@ -4,37 +4,27 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-{% raw %}
+## About Me
 
-<div class="badge-wrapper">
-  <iframe
-    src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2634564"
-    frameborder="0"
-    scrolling="no"
-    title="TryHackMe Badge"
-  ></iframe>
-  <br />
-</div>
-{% endraw %}
+Hello, I am Steve 'Zed' Muir. I am married to my wonderful best friend, Yasmin
+and we have a beautiful boy, Stanley.
 
----
+I love to learn and I'm fortunate enough to work for a company that invests in
+training their personnel. I try to learn as much as possible everyday but I also
+very much appreciate a balance of quality family time.
 
-Hello, I am Steve 'Zed' Muir. I am aspiring to make my way in the cybersecurity
-landscape. I am married to my wonderful best friend, Yasmin and we have a
-beautiful boy, Stanley. He keeps us busy as he approaches his second birthday.
+After a very successful 22 year career in the British Army, I tried to start a
+new career in cybersecurity. After almost a year of attending courses, chasing
+certifications, and investing a lot of money in equipment, it became clear that
+I was not going to achieve what I was hoping for. A good learning experience
+nonetheless, and I'm glad I did it.
 
-I love to learn and I'm learning about networking, cybersecurity, and anything
-computing related. I try to learn as much as possible everyday but I also very
-much appreciate a balance of quality family time.
-
-After deciding to transition to a career in cybersecurity, I initially thought
-the idea of being an ethical hacker sounded great and it really is very
-interesting. However, with my background in Risk Management, Mitigation and
-ensuring adherence to policy/governance, I find myself really enjoying learning
-the Governance, Risk, and Compliance (GRC) side of cybersecurity.
-
-Looking to work remotely as much as possible to maximise that family time and
-continue developing myself professionally.
+Now I am working as a risk engineer on a multi-billion pound project. I am
+learning new things about risk management all the time even though I have spent
+well over a decade managing operational risk. I have also been selected to do an
+apprenticeship which will culminate in a Level 3 Data Technician award. In 2026
+I will be starting APM Risk Management certifications to enhance my
+capabilities.
 
 As of 12 March 2025 I am officially CompTIA Security+ certified. Link to [Credly profile](https://www.credly.com/users/steve-muir.ee8d03c6) to confirm certification.
 
@@ -44,10 +34,6 @@ _The CompTIA Security+ CE logo_
 As of 4 April 2025 I officially hold the ISC2 Certified in Cybersecurity
 certification. Clink on the image below and it will verify that the
 certification has been awarded to me.
-
-I shall use this as a steppingstone to advance in the field of Governance, Risk,
-and Compliance (GRC). I will be working towards getting the CISSP
-certification/associate whilst continuing to study for other upcoming exams.
 
 {% raw %}
 
@@ -63,18 +49,28 @@ certification/associate whilst continuing to study for other upcoming exams.
 </div>
 {% endraw %}
 
-Currently working towards the CompTIA Network+ exam and the Certified Ethical
-Hacker (CEH) exam. I am considering to prepare for the Cisco Certified Network
-Associate (CCNA) exam as I have already attended the course; my focus however,
-will be more GRC aligned.
+Although I did enjoy learning about cybersecurity and networking, I doubt that
+I shall pursue any further certifications or courses in this area; not enough
+time to learn everything as much as I'd love to. Instead, I am looking to become
+an expert in advanced Microsoft Excel usage as well as Power BI. In the next 24
+months I also plan to master the use of Safran for risk modelling.
 
-Learning about networking and cybersecurity has been a great learning path so
-far and the journey has shown that there is **_a lot_** to learn. This blog is a
-way for me to record some notes, practice a bit of web/markdown coding, and if
-I'm lucky some others may even benefit from them.
+I hope to change the direction of this blog which was initially a way for me to
+capture some of my learning; practicing writing about TryHackMe rooms, taking
+some notes of notable learning points on certain courses, and other interesting
+things that I stumbled across.
 
-If you're on Try Hack Me, hit me up with a friend request. I try to keep active
-on there and hope to break into the top 5000 in 2025, time permitting.
+Now, the plan is to capture more about the subjects of risk management, data
+analysis, tips for tools I commonly use (such as Excel, Power BI, and RiskHive),
+and other project management tidbits that I find interesting.
+
+If you happen to come across any posts of mine, please feel free to comment and
+share any insights you have. I firmly believe that we can all learn from each
+other and sharing is caring.
+
+Peas & Love
+
+Zed
 
 <!-- > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page. -->
 <!-- {: .prompt-tip } -->
