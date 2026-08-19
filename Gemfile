@@ -13,7 +13,7 @@ end
 
 gem "wdm", "~> 0.2.0", :platforms => [:windows]
 
-gem 'jekyll-compose', group: [:jekyll_plugins]
+gem "jekyll-compose", group: [:jekyll_plugins]
 gem "csv"
 gem "logger"
 gem "base64"
