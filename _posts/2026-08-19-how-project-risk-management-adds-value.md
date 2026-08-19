@@ -3,7 +3,7 @@ layout: post
 title: How Project Risk Management Adds Value
 date: 2026-08-19 11:21 +0100
 author: b3rdma
-description: Thoughts on how PRM adds value to an organisation
+description: How project risk management improves predictability, decision-making, governance and confidence in delivery
 image:
 categories:
   - Risk Management
