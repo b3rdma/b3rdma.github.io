@@ -1,6 +1,6 @@
 ---
 title: THM Room Walkthrough - HackPark
-date: '2025-01-23 19:34:56 +0000'
+date: "2025-01-23 19:34:56 +0000"
 author: b3rdma
 categories:
   - Hacking
@@ -12,21 +12,8 @@ tags:
   - burp suite
 description: Part one of the THM room HackPark walkthrough.
 ---
+
 # Part 1
-
-## Contents
-
-<!-- toc -->
-
-- [Task 1 - Deploy the Machine](#task-1---deploy-the-machine)
-  * [To scan or not to scan...](#to-scan-or-not-to-scan)
-  * [Reverse-Image Search](#reverse-image-search)
-- [Task 2 - Using Hydra to Brute-Force a login](#task-2---using-hydra-to-brute-force-a-login)
-  * [BurpSuite to the rescue](#burpsuite-to-the-rescue)
-- [Task 3 - Compromise the machine](#task-3---compromise-the-machine)
-- [Task 4 - Windows Privilege Escalation](#task-4---windows-privilege-escalation)
-
-<!-- tocstop -->
 
 ## Task 1 - Deploy the Machine
 
@@ -118,4 +105,3 @@ That is Task 3 complete, now on to Task 4. I will run the exploit and start Task
 
 To be continued in Part 2 when I get the time to spin up the room again. Watch
 this space...
-

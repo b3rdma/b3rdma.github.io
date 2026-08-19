@@ -11,28 +11,10 @@ author: b3rdma
 categories:
   - Linux
   - Privilege Escalation
-date: '2025-02-01 20:22:01 +0000'
+date: "2025-02-01 20:22:01 +0000"
 description: My notes from the THM Linux Privilege Escalation room
 title: Linux Privilege Escalation
 ---
-## Contents
-
-<!-- toc -->
-
-- [Enumeration](#enumeration)
-  * [Useful Commands](#useful-commands)
-- [Automated Enumeration Tools](#automated-enumeration-tools)
-- [Get The Fuck Out Bins](#get-the-fuck-out-bins)
-- [Cat Alternative](#cat-alternative)
-- [Check for SUID/GUID](#check-for-suidguid)
-- [Unshadow](#unshadow)
-- [Capabilities](#capabilities)
-- [Find Writable Folders](#find-writable-folders)
-- [Path Env Variable](#path-env-variable)
-- [Enumerate mountable network shares](#enumerate-mountable-network-shares)
-- [Create and Compile](#create-and-compile)
-
-<!-- tocstop -->
 
 ## Enumeration
 
@@ -272,4 +254,3 @@ chmod +s nfs
 ```
 
 {: .nolineno }
-

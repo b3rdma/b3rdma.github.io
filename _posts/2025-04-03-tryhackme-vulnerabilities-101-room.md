@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TryHackMe Vulnerabilities 101 Room
-date: '2025-04-03 15:04 +0100'
+date: "2025-04-03 15:04 +0100"
 author: b3rdma
 description: My notes on the THM room Vulnerabilities 101
 image: null
@@ -14,16 +14,6 @@ tags:
   - vpr
   - exploit-db
 ---
-## Contents
-
-<!-- toc -->
-
-- [Common Vulnerability Scoring System (CVSS)](#common-vulnerability-scoring-system-cvss)
-- [Vulnerability Priority Rating (VPR)](#vulnerability-priority-rating-vpr)
-- [Vulnerability Databases](#vulnerability-databases)
-- [Example Process](#example-process)
-
-<!-- tocstop -->
 
 ## Common Vulnerability Scoring System (CVSS)
 
@@ -88,4 +78,3 @@ tags:
 4. Check vulnerability databases for any exploits on the target software/services.
 5. Use the exploit on the web application (or other service) to attempt to exploit the vulnerability.
 6. Document all steps and details of the attack. Produce report and demonstrate PoC.
-

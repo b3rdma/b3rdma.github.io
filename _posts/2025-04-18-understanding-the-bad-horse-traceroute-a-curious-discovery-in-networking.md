@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'Understanding the Bad Horse Traceroute: A Curious Discovery in Networking'
-date: '2025-04-18 18:29 +0100'
+title: "Understanding the Bad Horse Traceroute: A Curious Discovery in Networking"
+date: "2025-04-18 18:29 +0100"
 author: b3rdma
 description: >-
   An interesting find and implementation of DNS/reverse DNS for expressing an
@@ -17,29 +17,11 @@ tags:
   - dr. horrible
   - routing
 ---
+
 <!-- prettier-ignore-start -->
 > This little gem was an assignment in the _SOC Analyst NOW_ course created by [CyberNOW](https://www.cybernoweducation.com/).
 {: .prompt-info :}
 <!-- prettier-ignore-end -->
-
-## Contents
-
-<!-- toc -->
-
-- [What is Traceroute and How Does It Work?](#what-is-traceroute-and-how-does-it-work)
-- [The Bad Horse Traceroute](#the-bad-horse-traceroute)
-- [What is Dr. Horrible's Sing-Along Blog?](#what-is-dr-horribles-sing-along-blog)
-- [How Does It Work? (Simplified)](#how-does-it-work-simplified)
-  * [1. Registering a Domain and IP Range](#1-registering-a-domain-and-ip-range)
-  * [2. Chaining Routers](#2-chaining-routers)
-  * [3. Reverse DNS (PTR Records)](#3-reverse-dns-ptr-records)
-  * [4. Engineering the Path](#4-engineering-the-path)
-- [Try It Yourself](#try-it-yourself)
-- [Creative Network Engineering](#creative-network-engineering)
-- [Conclusion](#conclusion)
-  * [References](#references)
-
-<!-- tocstop -->
 
 ## What is Traceroute and How Does It Work?
 
@@ -213,4 +195,3 @@ sings.
 3. [Cloudflare: Reverse DNS](https://www.cloudflare.com/learning/dns/glossary/reverse-dns/)
 4. [Stack Overflow - How It Works](https://stackoverflow.com/questions/32870553/telling-a-story-with-traceroute-how-does-it-work)
 5. [A2WD Blog](https://www.a2wd.com/traceroute-bad-horse/)
-

@@ -9,30 +9,16 @@ author: b3rdma
 categories:
   - Tools
   - Network
-date: '2025-01-31 16:35:00 +0000'
+date: "2025-01-31 16:35:00 +0000"
 description: My notes on NMAP from the THM room NMAP Basic Port Scans
 title: NMAP Basic Port Scans
 ---
+
 <!-- prettier-ignore-start -->
 > These are my notes from the THM NMAP Basic Port Scans room. No teaching in
 > this post, just personal notes on basic NMAP usage.
 {: .prompt-warning }
 <!-- prettier-ignore-end -->
-
-## Contents
-
-<!-- toc -->
-
-- [TCP Flags](#tcp-flags)
-- [TCP Connect Scan](#tcp-connect-scan)
-- [TCP SYN Scan](#tcp-syn-scan)
-- [UDP Scan](#udp-scan)
-- [Fine-Tuning Scope and Performance](#fine-tuning-scope-and-performance)
-  * [Port Selection](#port-selection)
-  * [Performance (Scan Speed)](#performance-scan-speed)
-- [Summary](#summary)
-
-<!-- tocstop -->
 
 ## TCP Flags
 
@@ -171,4 +157,3 @@ six templates:
 > details.
 {: .prompt-info }
 <!-- prettier-ignore-end -->
-

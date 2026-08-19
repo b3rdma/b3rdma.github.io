@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NMAP Advanced Port Scans
-date: '2025-02-22 23:20 +0000'
+date: "2025-02-22 23:20 +0000"
 author: b3rdma
 description: My notes on NMAP from the THM room NMAP Advanced Port Scans
 image: null
@@ -13,27 +13,12 @@ tags:
   - enumeration
   - privilege escalation
 ---
+
 <!-- prettier-ignore-start -->
 > These are my notes from the THM NMAP Basic Port Scans room. No teaching in
 > this post, just personal notes on basic NMAP usage.
 {: .prompt-warning }
 <!-- prettier-ignore-end -->
-
-## Contents
-
-<!-- toc -->
-
-- [TCP Null Scan, FIN Scan and XMAS Scan.](#tcp-null-scan-fin-scan-and-xmas-scan)
-  * [Null Scan](#null-scan)
-  * [FIN Scan](#fin-scan)
-  * [XMAS Scan](#xmas-scan)
-  * [TCP Maimon Scan](#tcp-maimon-scan)
-  * [TCP ACK Scan](#tcp-ack-scan)
-  * [Window Scan](#window-scan)
-  * [Custom Scan](#custom-scan)
-  * [Spoofing and Decoys](#spoofing-and-decoys)
-
-<!-- tocstop -->
 
 Some advanced scans are useful against certain specific systems, others will be
 useful in particular network setups.
@@ -173,4 +158,3 @@ sudo nmap -D 10.10.0.1,10.10.0.2,RND,RND,ME <Target IP>
   - Fragmented Packets
   - Idle/Zombie Scan
   - Getting more details with `--reason`, `-v/-vv` or `-d/-dd`.
-

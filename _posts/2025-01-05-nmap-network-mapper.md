@@ -1,6 +1,6 @@
 ---
 title: NMAP Netowrk Mapper Basics
-date: '2025-01-05 21:35:00 +0000'
+date: "2025-01-05 21:35:00 +0000"
 author: b3rdma
 categories:
   - Tools
@@ -11,23 +11,10 @@ tags:
   - privilege escalation
 description: My notes on NMAP from the THM room NMAP Basics
 ---
+
 > These are my notes from the THM NMAP Introduction room. No teaching in this
 > post, just personal notes on basic NMAP usage.
 > {: .prompt-warning }
-
-## Contents
-
-<!-- toc -->
-
-- [NMAP Links](#nmap-links)
-- [What is NMAP?](#what-is-nmap)
-- [Host Discovery](#host-discovery)
-  * [NMAP host discovery using ARP](#nmap-host-discovery-using-arp)
-  * [NMAP host discovery using ICMP](#nmap-host-discovery-using-icmp)
-  * [NMAP host discovery using TCP and UDP](#nmap-host-discovery-using-tcp-and-udp)
-- [Summary of Commands](#summary-of-commands)
-
-<!-- tocstop -->
 
 ## NMAP Links
 
@@ -148,4 +135,3 @@ Summary of other flags used:
 - `-n` => No DNS lookup
 - `-R` => Reverse-DNS lookup for all hosts
 - `-sn` => host discovery only
-

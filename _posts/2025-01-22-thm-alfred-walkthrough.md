@@ -1,6 +1,6 @@
 ---
 title: THM Room Walkthrough - Alfred
-date: '2025-01-22 21:35:00 +0000'
+date: "2025-01-22 21:35:00 +0000"
 author: b3rdma
 categories:
   - Hacking
@@ -14,17 +14,6 @@ tags:
 description: THM room Alfred walkthrough - good room for rev shell/Metasploit practice
 media_subpath: /img/alfred/
 ---
-## Contents
-
-<!-- toc -->
-
-- [Task 1 - Initial Access](#task-1---initial-access)
-- [Initial Recon - NMAP Scan Results](#initial-recon---nmap-scan-results)
-- [Enumeration](#enumeration)
-- [Task 2 - Switching Shells](#task-2---switching-shells)
-- [Task 3 - Privilege Escalation](#task-3---privilege-escalation)
-
-<!-- tocstop -->
 
 ## Task 1 - Initial Access
 
@@ -202,4 +191,3 @@ context that these are basically my learning notes. Definitely let me know if
 there are errors, especially in relation to techniques/tools used.
 
 Thank you and Godspeed.
-

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: When a Simple Typo Almost Broke Trust - A Cybersecurity Near-Miss
-date: '2025-04-19 16:01 +0100'
+date: "2025-04-19 16:01 +0100"
 author: b3rdma
 description: >-
   A real near miss happened today when I manually typed a link to my blog site
@@ -18,21 +18,6 @@ tags:
   - blog
 media_subpath: /img/typo/
 ---
-## Contents
-
-<!-- toc -->
-
-- [The Incident](#the-incident)
-- [What I Thought Might Have Happened](#what-i-thought-might-have-happened)
-- [Some Other Results of the URL Redirect](#some-other-results-of-the-url-redirect)
-- [Typosquatting: Why This Is a Real Threat](#typosquatting-why-this-is-a-real-threat)
-- [What I Took Away From This](#what-i-took-away-from-this)
-- [Tips to Avoid Similar Mistakes](#tips-to-avoid-similar-mistakes)
-- [Final Thoughts](#final-thoughts)
-- [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
-- [Glossary](#glossary)
-
-<!-- tocstop -->
 
 Sometimes the smallest mistakes can teach us the biggest lessons. Recently, I
 accidentally shared a typoed link to my GitHub Pages blog in a Discord chat.
@@ -248,4 +233,3 @@ sites.
 
 **VirusTotal** An online service that scans files and URLs with multiple
 antivirus engines to check for malware or malicious content.
-

@@ -1,6 +1,6 @@
 ---
 title: THM Room Walkthrough - HackPark Part 2
-date: '2025-02-02 10:34:56 +0000'
+date: "2025-02-02 10:34:56 +0000"
 author: b3rdma
 categories:
   - Hacking
@@ -14,21 +14,8 @@ description: Part two of the THM room HackPark walkthrough.
 media_subpath: /img/hackpark/
 published: null
 ---
+
 # Part 2
-
-## Contents
-
-<!-- toc -->
-
-- [Task 3 - Compromise the machine](#task-3---compromise-the-machine)
-  * [Get the exploit](#get-the-exploit)
-  * [Upload the exploit](#upload-the-exploit)
-  * [Initial reverse shell](#initial-reverse-shell)
-- [Task 4 and 5 - Windows Privilege Escalation](#task-4-and-5---windows-privilege-escalation)
-  * [Metasploit and winPEAS](#metasploit-and-winpeas)
-  * [Msfvenom](#msfvenom)
-
-<!-- tocstop -->
 
 ## Task 3 - Compromise the machine
 
@@ -250,4 +237,3 @@ where I uploaded reverse.exe with success.
 ###
 
 <!-- TODO: Finish the write up -->
-
