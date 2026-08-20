@@ -13,7 +13,7 @@ tags:
   - lizard point
   - travel
   - photography
-media_subpath: /assets/img/posts/lizard-point/
+media_subpath: /img/posts/lizard-point/
 ---
 
 Can't believe that almost 6 months have passed since the family (including the old'uns!) took a drive to the **Lizard Point** in Cornwall. Lizard Point is mainland Britain's most southerly point, infamous as a site of shipwrecks in the past and overlooking what is still one of the busiest shipping lanes in the world. For more info you can visit the National Trust website [^1].

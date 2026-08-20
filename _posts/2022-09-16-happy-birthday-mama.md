@@ -10,7 +10,7 @@ categories:
 tags:
   - personal
   - family
-media_subpath: /assets/img/posts/happy-birthday-mama/
+media_subpath: /img/posts/happy-birthday-mama/
 ---
 
 ## Happy birthday dearest Mama

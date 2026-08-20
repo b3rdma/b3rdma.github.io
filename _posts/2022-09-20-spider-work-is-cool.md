@@ -12,7 +12,7 @@ tags:
   - wildlife
   - spiders
   - photography
-media_subpath: /assets/img/posts/spider-work-is-cool/
+media_subpath: /img/posts/spider-work-is-cool/
 ---
 
 Check out this gorgeous little beast…

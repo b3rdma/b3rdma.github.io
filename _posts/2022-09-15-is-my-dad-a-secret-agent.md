@@ -10,7 +10,7 @@ categories:
 tags:
   - personal
   - family
-media_subpath: /assets/img/posts/dad-secret-agent/
+media_subpath: /img/posts/dad-secret-agent/
 ---
 
 I'm not sure we’ll ever know…
