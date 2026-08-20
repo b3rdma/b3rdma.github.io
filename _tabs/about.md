@@ -4,67 +4,50 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Hello, I am Steve 'Zed' Muir. I am married to my wonderful best friend, Yasmin
-and we have a beautiful boy, Stanley.
+Hi, I'm Steve 'Zed' Muir.
 
-I love to learn and I'm fortunate enough to work for a company that invests in
-training their personnel. I try to learn as much as possible everyday but I also
-very much appreciate a balance of quality family time.
+This is my little corner of the internet for professional thoughts and personal mutterings.
 
-After a very successful 22 year career in the British Army, I tried to start a
-new career in cybersecurity. After almost a year of attending courses, chasing
-certifications, and investing a lot of money in equipment, it became clear that
-I was not going to achieve what I was hoping for. A good learning experience
-nonetheless, and I'm glad I did it.
+After a 22-year career in the British Army, I eventually found my way into project risk management. Much of my professional writing here now revolves around risk, project controls, data, decision-making and the various tools and techniques I pick up along the way.
 
-Now I am working as a risk engineer on a multi-billion pound project. I am
-learning new things about risk management all the time even though I have spent
-well over a decade managing operational risk. I have also been selected to do an
-apprenticeship which will culminate in a Level 3 Data Technician award. In 2026
-I will be starting APM Risk Management certifications to enhance my
-capabilities.
+I enjoy understanding how things work, particularly when that involves digging beneath the surface rather than simply accepting that something works because somebody says it does. That curiosity tends to lead me in all sorts of directions, so the occasional post about technology, photography, computing, or something else entirely should probably be expected.
 
-As of 12 March 2025 I am officially CompTIA Security+ certified. Link to [Credly profile](https://www.credly.com/users/steve-muir.ee8d03c6) to confirm certification.
+But work is only part of life.
 
-![CompTIA Security Plus CE logo](../assets/img/SecurityPlus_Logo_Certified_CE.png){: width="350" height="200" }
-_The CompTIA Security+ CE logo_
+I'm married to my wonderful wife and best friend, Yasmin. We've been together since 1999 and somehow still quite like each other.
 
-As of 4 April 2025 I officially hold the ISC2 Certified in Cybersecurity
-certification. Clink on the image below and it will verify that the
-certification has been awarded to me.
+![Yasmin and Zed in Nuremberg](img/about/yassi_nuremberg.jpeg)
+_Yassi and me in Nuremberg_
 
-{% raw %}
+As of 29 September 2023, we have the addition of Stanley Muir to our family unit. 🥰🥰
 
-<div style="text-align: center;">
-  <div style="display: inline-block;">
+![Stanley posing for his passport!](img/about/stan.jpg)
+_Stanley's passport photo!_
 
-  <div data-iframe-width="300" data-iframe-height="250"
-  data-share-badge-id="7c3ff811-5ce3-4000-a074-deda67568633"
-  data-share-badge-host="https://www.credly.com"></div><script
-  type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+Family, travel, and the everyday nonsense that makes life interesting have always found their way into my writing. Some of the older posts on this site originally lived on a much more personal blog, and I have decided to bring a selection of them back rather than leave them gathering digital dust.
 
-  </div>
-</div>
-{% endraw %}
+They are not polished professional articles and were never intended to be. They are snapshots of places, people, and moments that mattered to me at the time.
 
-Although I did enjoy learning about cybersecurity and networking, I doubt that
-I shall pursue any further certifications or courses in this area; not enough
-time to learn everything as much as I'd love to. Instead, I am looking to become
-an expert in advanced Microsoft Excel usage as well as Power BI. In the next 24
-months I also plan to master the use of Safran for risk modelling.
+We also share our lives with Coco, who has considerably less interest in project risk management.
 
-I hope to change the direction of this blog which was initially a way for me to
-capture some of my learning; practicing writing about TryHackMe rooms, taking
-some notes of notable learning points on certain courses, and other interesting
-things that I stumbled across.
+![Coco the cat looking cute](img/about/coco.jpeg)
+_Coco, looking suitably magnificent_
 
-Now, the plan is to capture more about the subjects of risk management, data
-analysis, tips for tools I commonly use (such as Excel, Power BI, and RiskHive),
-and other project management tidbits that I find interesting.
+What you'll find here
 
-If you happen to come across any posts of mine, please feel free to comment and
-share any insights you have. I firmly believe that we can all learn from each
-other and sharing is caring.
+The professional side will mostly cover subjects such as project risk management, project controls, data analysis and the tools I use or experiment with.
+
+The personal side is far less predictable. Photography, travel, wildlife, family stories, technology, old adventures and anything else that seems worth recording may appear without warning.
+
+Some posts are intended to explain something useful. Others exist simply because I wanted to write them down.
+
+That mixture is deliberate.
+
+This site started as somewhere to document things I was learning, particularly around technology and cybersecurity. My interests and career have moved on since then, but I still like having somewhere independent to write, experiment, and preserve things that would otherwise disappear into the endless scroll of the internet.
+
+If something here is useful, interesting or makes you smile, then it has probably done its job.
+
+Comments and differing perspectives are always welcome. I firmly believe that we can all learn something from each other.
 
 Peas & Love
 
