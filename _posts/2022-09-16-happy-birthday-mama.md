@@ -15,7 +15,7 @@ media_subpath: /img/posts/happy-birthday-mama/
 
 Hello Mama, we wish you a most wonderful and glorious birthday.
 
-![Family in Austria](family.jpeg){: width="700" height="400" }
+![Family in Austria](family.jpeg)
 _The Austrian family_
 
 ---
