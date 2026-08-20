@@ -13,12 +13,10 @@ tags:
 media_subpath: /img/posts/happy-birthday-mama/
 ---
 
-## Happy birthday dearest Mama
-
 Hello Mama, we wish you a most wonderful and glorious birthday.
 
-![Family in Austria](family.jpeg)
-<figcaption>The Austrian family</figcaption>
+![Family in Austria](family.jpeg){: width="700" height="400" }
+_The Austrian family_
 
 ---
 

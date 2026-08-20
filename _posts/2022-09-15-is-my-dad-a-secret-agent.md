@@ -19,7 +19,7 @@ So, for many years this man has been my role model. He has always worked hard an
 
 Recently, I have begun to wonder if this man is a secret agent. Often, he moves like a man of mystery and look at him go with weapon in his hand. No matter if he is a **double-oh-something** or not, he will always be a legend to me.
 
-![Dad shooting his Nerf](dad_bond.jpeg)
-<figcaption>Dad Bond is real!</figcaption>
+![Dad shooting his Nerf](dad_bond.jpeg){: width="700" height="400" }
+_Dad Bond is real!_
 
 Watch this space for more action shots in the future… maybe.
