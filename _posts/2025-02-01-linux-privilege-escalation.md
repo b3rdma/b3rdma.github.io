@@ -7,10 +7,11 @@ tags:
   - automated enumeration tools
   - commands
   - exploit-db
+  - privilege escalation
 author: b3rdma
 categories:
+  - Hacking
   - Linux
-  - Privilege Escalation
 date: "2025-02-01 20:22:01 +0000"
 description: My notes from the THM Linux Privilege Escalation room
 title: Linux Privilege Escalation

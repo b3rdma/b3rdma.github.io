@@ -17,11 +17,11 @@ description: Part one of the THM room HackPark walkthrough.
 
 ## Task 1 - Deploy the Machine
 
-### To scan or not to scan...
+### To Scan or Not to Scan…
 
 Simple first task here; deploy the machine and answer a question about the
 clown. The question asks who is the clown on the homepage so I took a 'gamble'
-and entered the target ip address direct in to the browser _without_ performing
+and entered the target IP address direct in to the browser _without_ performing
 an `nmap` scan first.
 
 ### Reverse-Image Search
@@ -32,7 +32,7 @@ a google reverse-image search and found the name is _Pennywise_; I should really
 have known that but it's been a while since I seen the film and it's good
 practice to do a reverse image search. On to task 2.
 
-## Task 2 - Using Hydra to Brute-Force a login
+## Task 2 - Using Hydra to Brute-Force a Login
 
 I had a few issues running the Hydra command as it's been a while since I used
 it and there were no entries in the results from `history | rg hydra`. First few
@@ -48,7 +48,7 @@ will return a default of 16 correct passwords, all of which are actually
 incorrect. This is because Hydra is not seeing the failed login condition and
 therefore stops at 16 '_successful_' attempts.
 
-### BurpSuite to the rescue
+### BurpSuite to the Rescue
 
 I cracked open BurpSuite and enabled the proxy intercept. Going to the login
 page and adding _admin_ and _password_ to the fields, clicking the login button
@@ -78,12 +78,12 @@ Quite the mouthful eh.
 Success with Hydra informing us that `login: admin` and `password: 1qaz2wsx` are
 working. On to Task 3.
 
-## Task 3 - Compromise the machine
+## Task 3 - Compromise the Machine
 
 First question is found after logging in and clicking on the about link on the
 left. Too easy.
 
-In this section, the answer to question 3 is also there and is labeled
+In this section, the answer to question 3 is also there and is labelled
 _Identity:_ so not hard to find either.
 
 > Technically speaking, we're supposed to answer this question _after_ we get
@@ -104,4 +104,4 @@ That is Task 3 complete, now on to Task 4. I will run the exploit and start Task
 ## Task 4 - Windows Privilege Escalation
 
 To be continued in Part 2 when I get the time to spin up the room again. Watch
-this space...
+this space…

@@ -6,9 +6,11 @@ author: b3rdma
 description: My notes on the THM room Vulnerabilities 101
 image: null
 categories:
+  - Hacking
+  - Try Hack Me
+tags:
   - Vulnerabilities
   - Exploits
-tags:
   - cvss
   - cve
   - vpr

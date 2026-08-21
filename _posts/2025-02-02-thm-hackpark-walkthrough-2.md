@@ -11,7 +11,7 @@ tags:
   - exploit-db
   - winpeas
 description: Part two of the THM room HackPark walkthrough.
-media_subpath: /img/hackpark/
+media_subpath: /img/posts/hackpark/
 published: null
 ---
 

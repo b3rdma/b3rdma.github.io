@@ -12,12 +12,12 @@ tags:
   - reverse shell
   - metasploit
 description: THM room Alfred walkthrough - good room for rev shell/Metasploit practice
-media_subpath: /img/alfred/
+media_subpath: /img/posts/alfred/
 ---
 
 ## Task 1 - Initial Access
 
-First things first, lets do a full nmap scan to see what is open on the target.
+First things first, let's do a full Nmap scan to see what is open on the target.
 I used the following command to scan the target:
 
 <!-- prettier-ignore-start -->
@@ -102,7 +102,7 @@ nc -nvlp 4444
 {: .nolineno }
 <!-- prettier-ignore-end -->
 
-- Had issues with getting the `nc` command to work on MacOS so booted up Kali
+- Had issues with getting the `nc` command to work on macOS so booted up Kali
 - Worked great once build of the project started on Kali; reverse shell sorted.
 - Had to search about a bit to find the flag at `C:\Users\bruce\Desktop\user.txt`
 - Flag is: `79007a09481963edf2e1321abd9ae2a0`

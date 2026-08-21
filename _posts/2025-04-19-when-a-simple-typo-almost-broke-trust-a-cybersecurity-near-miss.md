@@ -9,14 +9,13 @@ description: >-
 image: null
 categories:
   - Cybersecurity
-  - Personal
 tags:
   - typosquatting
   - mistakes
   - infosec
   - lessons
-  - blog
-media_subpath: /img/typo/
+  - personal
+media_subpath: /img/posts/typo/
 ---
 
 Sometimes the smallest mistakes can teach us the biggest lessons. Recently, I
