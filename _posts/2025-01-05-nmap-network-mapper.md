@@ -1,5 +1,5 @@
 ---
-title: NMAP Netowrk Mapper Basics
+title: Nmap Network Mapper Basics
 date: "2025-01-05 21:35:00 +0000"
 author: b3rdma
 categories:
@@ -9,25 +9,25 @@ tags:
   - nmap
   - enumeration
   - privilege escalation
-description: My notes on NMAP from the THM room NMAP Basics
+description: My notes on Nmap from the THM room Nmap Basics
 ---
 
-> These are my notes from the THM NMAP Introduction room. No teaching in this
-> post, just personal notes on basic NMAP usage.
+> These are my notes from the THM Nmap Introduction room. No teaching in this
+> post, just personal notes on basic Nmap usage.
 > {: .prompt-warning }
 
-## NMAP Links
+## Nmap Links
 
-- [NMAP NSE](https://nmap.org/book/nse-usage.html) - NMAP Scripting Engine
-- [NMAP Firewall/IDS Evasion](https://nmap.org/book/man-bypass-firewalls-ids.html) - Flags used to bypass firewalls and IDS
+- [Nmap NSE](https://nmap.org/book/nse-usage.html) - Nmap Scripting Engine
+- [Nmap Firewall/IDS Evasion](https://nmap.org/book/man-bypass-firewalls-ids.html) - Flags used to bypass firewalls and IDS
 
-## What is NMAP?
+## What is Nmap?
 
-NMAP is used for mapping networks, identifying live hosts, and discovering
-running services. NMAP's scripting engine can further extend its functionality,
+Nmap is used for mapping networks, identifying live hosts, and discovering
+running services. Nmaps scripting engine can further extend its functionality,
 from fingerprinting services to exploiting vulnerabilities.
 
-- A NMAP scan usually goes through the following steps:
+- A Nmap scan usually goes through the following steps:
 
   1. Enumerate targets
   2. Discover live hosts
@@ -39,7 +39,7 @@ from fingerprinting services to exploiting vulnerabilities.
   8. Scripts
   9. Write output
 
-- NMAP leverages the following protocols to discover live hosts:
+- Nmap leverages the following protocols to discover live hosts:
 
   1. ARP from Link Layer
   2. ICMP from Network Layer
@@ -49,18 +49,18 @@ from fingerprinting services to exploiting vulnerabilities.
 ## Host Discovery
 
 There are various ways to discover online hosts. When no host discovery options
-are provided, NMAP uses the following default options:
+are provided, Nmap uses the following default options:
 
 1. When a _privileged_ user tries to scan targets on a local network (Ethernet),
-   NMAP will use ARP from Link Layer.
+   Nmap will use ARP from Link Layer.
 2. When a _privileged_ user tries to scan targets outside the local network,
-   NMAP will use ICMP echo requests, TCP ACK to port 80, TCP SYN to port 443,
+   Nmap will use ICMP echo requests, TCP ACK to port 80, TCP SYN to port 443,
    and ICMP timestamp request.
 3. When an _unprivileged_ user tries to scan targets outside the local network,
-   NMAP resorts to a TCP 3-way handshake by sending SYN packets to port 80 and
+   Nmap resorts to a TCP 3-way handshake by sending SYN packets to port 80 and
    port 443.
 
-### NMAP host discovery using ARP
+### Nmap host discovery using ARP
 
 <!-- prettier-ignore-start -->
 ```zsh
@@ -73,7 +73,7 @@ Check details of the flags; `-PR` means only scan with ARP, `-sn` means scan
 only on local network, no DNS lookup. Use in conjunction with WireShark to
 capture ARP packet details. An alternative is `arp-scan` which is installed.
 
-### NMAP host discovery using ICMP
+### Nmap host discovery using ICMP
 
 <!-- prettier-ignore-start -->
 ```bash
@@ -85,9 +85,9 @@ sudo nmap -PE -sn 10.10.210.6/24
 This method, `-PE` means only scan with ICMP echo request, `-sn` means scan only
 on local network, no DNS lookup. Downside is that many firewalls block ICMP.
 Consider using ICMP Timestamp or ICMP Address Mask instead. Timestamp requests
-use the NMAP flag `-PP` and address mask requests use the NMAP flag `-PM`.
+use the Nmap flag `-PP` and address mask requests use the Nmap flag `-PM`.
 
-### NMAP host discovery using TCP and UDP
+### Nmap host discovery using TCP and UDP
 
 <!-- prettier-ignore-start -->
 ```bash
@@ -96,15 +96,15 @@ sudo nmap -PS -sn 10.10.210.6/24
 {: .nolineno }
 <!-- prettier-ignore-end -->
 
-The NMAP `-PS` flag means only scan with TCP SYN packets, `-sn` means scan only
-on local network, no DNS lookup. The NMAP `-PA` flag means only scan with TCP
-ACK packets, `-sn` means scan only on local network, no DNS lookup. For both the
-`-PS` and `-PA` flags, ports can be specified as well. E.g., `-PA21`,
-`-PA21-25`, and `-PA80,443,8080` are all valid port definitions. If no port
-specified, port 80 will be scanned.
+`-PS<ports>` specifies TCP SYN probes for host discovery, while `-PA<ports>`
+specifies TCP ACK probes. Ports may be given as individual ports, ranges, or
+comma-separated lists, such as `-PA21`, `-PA21-25`, or `-PA80,443,8080`. `-sn` disables
+port scanning after host discovery; it is not restricted to local networks. Use
+`-n` separately to disable reverse-DNS lookups. If no port list is supplied, Nmap
+uses its default discovery ports; typically TCP 443 for `-PS` and TCP 80 for `-PA`
 
 With UDP, a response is not expected; however, if the port is closed, we expect
-to get an ICMP port unreachable packet which inicates the target system is up
+to get an ICMP port unreachable packet which indicates the target system is up
 and available. Syntax is as follows:
 
 <!-- prettier-ignore-start -->

@@ -19,7 +19,7 @@ I'm married to my wonderful wife and best friend, Yasmin. We've been together si
 ![Yasmin and Zed in Nuremberg](img/about/yassi_nuremberg.jpeg)
 _Yassi and me in Nuremberg_
 
-As of 29 September 2023, we have the addition of Stanley Muir to our family unit. 🥰🥰
+Stanley joined our family in September 2023. 🥰🥰
 
 ![Stanley posing for his passport!](img/about/stan.jpg)
 _Stanley's passport photo!_

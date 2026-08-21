@@ -1,13 +1,13 @@
 ---
 layout: post
-title: NMAP Advanced Port Scans
+title: Nmap Advanced Port Scans
 date: "2025-02-22 23:20 +0000"
 author: b3rdma
-description: My notes on NMAP from the THM room NMAP Advanced Port Scans
+description: My notes on Nmap from the THM room Nmap Advanced Port Scans
 image: null
 categories:
-  - Tools
   - Network
+  - Tools
 tags:
   - nmap
   - enumeration
@@ -15,8 +15,8 @@ tags:
 ---
 
 <!-- prettier-ignore-start -->
-> These are my notes from the THM NMAP Basic Port Scans room. No teaching in
-> this post, just personal notes on basic NMAP usage.
+> These are my notes from the THM Nmap Advanced Port Scans room. No teaching in
+> this post, just personal notes on advanced Nmap usage.
 {: .prompt-warning }
 <!-- prettier-ignore-end -->
 

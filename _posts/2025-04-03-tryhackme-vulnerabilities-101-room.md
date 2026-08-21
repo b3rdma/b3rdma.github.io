@@ -9,8 +9,8 @@ categories:
   - Hacking
   - Try Hack Me
 tags:
-  - Vulnerabilities
-  - Exploits
+  - vulnerabilities
+  - exploits
   - cvss
   - cve
   - vpr
@@ -75,7 +75,7 @@ tags:
 ## Example Process
 
 1. Information Gathering - find out details of the target using OSINT; details such as number of clients, services offered, etc., possible software to attack such as a help desk or support application.
-2. Enumeration and Scanning - Check for hosts, ports, and services that are open using NMAP.
+2. Enumeration and Scanning - Check for hosts, ports, and services that are open using Nmap.
 3. Application Testing - Look for version numbers, try login credentials, try to access services, etc.
 4. Check vulnerability databases for any exploits on the target software/services.
 5. Use the exploit on the web application (or other service) to attempt to exploit the vulnerability.

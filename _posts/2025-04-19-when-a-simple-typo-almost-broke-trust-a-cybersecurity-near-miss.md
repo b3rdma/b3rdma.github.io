@@ -88,8 +88,8 @@ investigation:
 
 - [x] The URL led to a parked page with no active malicious code
 - [x] VirusTotal flagged the link as clean (0/94 detections), as did URLScan
-- [x] No alarming results from a google search although the redirects may be too
-      numerous to research in just a hour or so.
+- [x] No alarming results from a Google search although the redirects may be too
+      numerous to research in just an hour or so.
 - [x] There was no evidence of automatic downloads or script execution
 
 ![URLScan.io results of a malicious URL](urlscan_results.webp){: width="700" height="400" }
@@ -98,7 +98,7 @@ _Results from URLScan.io on the potentially malicious URL_
 ## Some Other Results of the URL Redirect
 
 I made sure I had real-time protection enabled, firewall rules in place and used
-a windows VM to look at the behaviour of the redirect. Standard behaviour of
+a Windows VM to look at the behaviour of the redirect. Standard behaviour of
 suspect sites that redirect to a site that throws pop-ups, adverts, and other
 click-me call-to-actions. Here are a few screenshots:
 
@@ -121,7 +121,7 @@ malvertising, adware and phishing.
 _First redirect that happened in the Edge browser in Windows_
 
 The second example in the Edge browser shows a website with a load of adverts
-and a 'new user bonus'! Do not clink on things like that, please. It should be
+and a 'new user bonus'! Do not click on things like that, please. It should be
 noted that the exact same link with the typo was used, but the end target was
 different. I did limited tests and do not know how many different pages the link
 would lead to. Some may have more malicious intent than others.

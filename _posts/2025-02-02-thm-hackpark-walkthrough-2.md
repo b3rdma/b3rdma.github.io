@@ -139,7 +139,7 @@ Once the exploit file is uploaded, we follow the instructions to trigger the
 reverse shell once we have set up a listener.
 
 > I have had issues in the past with netcat,
-> `nc`, not working correctly when used as a listener on MacOS. I used NMAP's version, `ncat`, which works.
+> `nc`, not working correctly when used as a listener on MacOS. I used Nmap's version, `ncat`, which works.
 > {: .prompt-info }
 
 Making sure the same port is used as we entered in to the exploit:

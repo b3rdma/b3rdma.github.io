@@ -21,15 +21,15 @@ description: Part one of the THM room HackPark walkthrough.
 
 Simple first task here; deploy the machine and answer a question about the
 clown. The question asks who is the clown on the homepage so I took a 'gamble'
-and entered the target IP address direct in to the browser _without_ performing
+and entered the target IP address direct into the browser _without_ performing
 an `nmap` scan first.
 
 ### Reverse-Image Search
 
 It paid off as I went straight to homepage of the site and saw the clown from
 the **IT** film. To answer the question of who he is, I saved the image and did
-a google reverse-image search and found the name is _Pennywise_; I should really
-have known that but it's been a while since I seen the film and it's good
+a Google reverse-image search and found the name is _Pennywise_; I should really
+have known that but it's been a while since I have seen the film and it's good
 practice to do a reverse image search. On to task 2.
 
 ## Task 2 - Using Hydra to Brute-Force a Login

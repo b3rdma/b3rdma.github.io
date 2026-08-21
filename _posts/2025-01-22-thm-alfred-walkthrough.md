@@ -27,7 +27,7 @@ sudo nmap -sV -sC -p- -Pn -T4 10.10.131.95
 {: .nolineno }
 <!-- prettier-ignore-end -->
 
-## Initial Recon - NMAP Scan Results
+## Initial Recon - Nmap Scan Results
 
 <!-- prettier-ignore-start -->
 ```bash

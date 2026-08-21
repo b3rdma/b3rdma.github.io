@@ -26,8 +26,8 @@ Make sure to look at the Exploit DB once system information has been gathered - 
 Some useful commands once access to a machine has been gained:
 
 - `hostname` - can provide some information about the target's role within the organisation
-- `uname -a` - provides information about the target's system such as the kernal; useful for searching for vulnerabilities
-- `cat /proc/version` - provides information about the target's operating system such as kernal version and compilers installed (e.g. GCC)
+- `uname -a` - provides information about the target's system such as the kernel; useful for searching for vulnerabilities
+- `cat /proc/version` - provides information about the target's operating system such as kernel version and compilers installed (e.g. GCC)
 - `cat /etc/issue` - provides information about the target's operating system such as the version
 - `ps` - shows running processes on the target system. Useful flags include `aux`, `axjf`, `-A`
 - `env` - shows environment variables

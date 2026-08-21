@@ -7,22 +7,22 @@ tags:
   - privilege escalation
 author: b3rdma
 categories:
-  - Tools
   - Network
+  - Tools
 date: "2025-01-31 16:35:00 +0000"
-description: My notes on NMAP from the THM room NMAP Basic Port Scans
-title: NMAP Basic Port Scans
+description: My notes on Nmap from the THM room Nmap Basic Port Scans
+title: Nmap Basic Port Scans
 ---
 
 <!-- prettier-ignore-start -->
-> These are my notes from the THM NMAP Basic Port Scans room. No teaching in
-> this post, just personal notes on basic NMAP usage.
+> These are my notes from the THM Nmap Basic Port Scans room. No teaching in
+> this post, just personal notes on basic Nmap usage.
 {: .prompt-warning }
 <!-- prettier-ignore-end -->
 
 ## TCP Flags
 
-NMAP can set or unset the following TCP flags within the TCP header:
+Nmap can set or unset the following TCP flags within the TCP header:
 
 - URG: Urgent - indicates that the incoming data is urgent. With the URG flag
   is set, it is processed immediately without consideration of having to wait on
@@ -106,7 +106,7 @@ Specifying the ports is intuitive by now. Let’s see some examples:
 ### Performance (Scan Speed)
 
 You can control the scan timing using `-T<0-5>`. `-T0` is the slowest
-(paranoid), while `-T5` is the fastest. According to NMAP manual page, there are
+(paranoid), while `-T5` is the fastest. According to Nmap manual page, there are
 six templates:
 
 | Level | Name       | Flag  |
@@ -122,7 +122,7 @@ six templates:
 > To avoid IDS alerts, you might consider `-T0` or `-T1`. For instance, `-T0`
 > scans one port at a time and waits 5 minutes between sending each probe,
 > so you can guess how long scanning one target would take to finish. If you don’t
-> specify any timing, NMAP uses normal `-T3`. Note that `-T5` is the most
+> specify any timing, Nmap uses normal `-T3`. Note that `-T5` is the most
 > aggressive in terms of speed; however, this can affect the accuracy of the scan
 > results due to the increased likelihood of packet loss. Note that `-T4` is often
 > used during CTFs and when learning to scan on practice targets, whereas `-T1` is
@@ -153,7 +153,7 @@ six templates:
 > It is not best practice to add _new material_ to the summary that has not been
 > covered in the body; however, I added a couple of flags to the second table as
 > I want to have them there as a reminder but did not feel they needed a section
-> of their own in my notes. I shall refer to the NMAP docs if I ever need more
+> of their own in my notes. I shall refer to the Nmap docs if I ever need more
 > details.
 {: .prompt-info }
 <!-- prettier-ignore-end -->

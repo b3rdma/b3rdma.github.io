@@ -28,7 +28,7 @@ _Traditional looking mushroom in the undergrowth - Bardufoss, Norway_
 ![photo of another mushroom](mushroom5-bardufoss.jpeg)
 _An oyster-looking mushroom on a fallen tree - Bardufoss, Norway_
 
-Coming back to the local area, these large fungi/mushrooms were seen on HMS Raleigh, Torpoint in Cornwall. It looks like they the type to explode and spread their dust-like spores in the same way a volcano spreads the ash of the Earth's core.
+Coming back to the local area, these large fungi/mushrooms were seen on HMS Raleigh, Torpoint in Cornwall. It looks like they're the type to explode and spread their dust-like spores in the same way a volcano spreads the ash of the Earth's core.
 
 ![exploding type fungi of some kind](mushroom6-hmsraleigh.jpeg)
 _Exploding globular fungi things - Torpoint, Cornwall_
