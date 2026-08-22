@@ -24,7 +24,7 @@ description: My notes on Nmap from the THM room Nmap Basics
 ## What is Nmap?
 
 Nmap is used for mapping networks, identifying live hosts, and discovering
-running services. Nmaps scripting engine can further extend its functionality,
+running services. Nmap's scripting engine can further extend its functionality,
 from fingerprinting services to exploiting vulnerabilities.
 
 - A Nmap scan usually goes through the following steps:
@@ -71,7 +71,7 @@ sudo nmap -PR -sn 10.10.210.6/24
 
 Check details of the flags; `-PR` means only scan with ARP, `-sn` disables port
 scanning after host discovery; it is not restricted to local networks. Use in
-conjunction with WireShark to capture ARP packet details. An alternative is
+conjunction with Wireshark to capture ARP packet details. An alternative is
 `arp-scan` which is installed.
 
 ### Nmap host discovery using ICMP

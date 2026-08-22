@@ -131,7 +131,7 @@ unshadow passwd.txt shadow.txt >passwords.txt
 {: .nolineno }
 
 ```bash
-john --wordlist=/usr/shares/wordlists/rockyou.txt passwords.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt passwords.txt
 ```
 
 {: .nolineno }
