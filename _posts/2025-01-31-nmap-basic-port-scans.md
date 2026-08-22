@@ -7,8 +7,8 @@ tags:
   - privilege escalation
 author: b3rdma
 categories:
-  - Network
-  - Tools
+  - Networking
+  - Nmap
 date: "2025-01-31 16:35:00 +0000"
 description: My notes on Nmap from the THM room Nmap Basic Port Scans
 title: Nmap Basic Port Scans
@@ -24,7 +24,7 @@ title: Nmap Basic Port Scans
 
 Nmap can set or unset the following TCP flags within the TCP header:
 
-- URG: Urgent - indicates that the incoming data is urgent. With the URG flag
+- URG: Urgent - indicates that the incoming data is urgent. When the URG flag
   is set, it is processed immediately without consideration of having to wait on
   previously sent TCP segments.
 - ACK: Acknowledgment - Ack flag is used to acknowledge the receipt of a TCP

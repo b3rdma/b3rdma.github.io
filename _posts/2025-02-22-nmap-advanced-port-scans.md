@@ -6,8 +6,8 @@ author: b3rdma
 description: My notes on Nmap from the THM room Nmap Advanced Port Scans
 image: null
 categories:
-  - Network
-  - Tools
+  - Networking
+  - Nmap
 tags:
   - nmap
   - enumeration
@@ -23,7 +23,7 @@ tags:
 Some advanced scans are useful against certain specific systems, others will be
 useful in particular network setups.
 
-## TCP Null Scan, FIN Scan and XMAS Scan.
+## TCP Null Scan, FIN Scan and XMAS Scan
 
 ### Null Scan
 
@@ -33,7 +33,7 @@ useful in particular network setups.
   that the port is open or a firewall is blocking the packet.
 - If the port is closed, a packet with RST bit set will be sent back to the
   host.
-- A lack of a RST packet in the Null Scan indicates that the port is not closed:
+- A lack of an RST packet in the Null Scan indicates that the port is not closed:
   _*open or filtered*_.
 
 <!-- prettier-ignore-start -->

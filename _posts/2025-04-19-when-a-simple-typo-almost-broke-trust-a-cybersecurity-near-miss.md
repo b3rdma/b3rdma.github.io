@@ -110,7 +110,7 @@ visit the site and that is not advisable unless you have a good reason.
 _Safari browser immediately warns of the Deceptive Website_
 
 In the first example in the Edge browser on Windows, the page is calling for
-visitors to renew their licence for McAfee. Note the typically use of urgency
+visitors to renew their licence for McAfee. Note the typical use of urgency
 and impending doom to pressure visitors to take action. The machine is not
 infected unless clicks and other actions are taken. It is also interesting to
 note that the URL has tracking identifiers, network metadata, referral data, and

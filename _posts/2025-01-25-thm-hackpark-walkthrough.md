@@ -13,7 +13,7 @@ tags:
 description: Part one of the THM room HackPark walkthrough.
 ---
 
-# Part 1
+## Part 1
 
 ## Task 1 - Deploy the Machine
 
@@ -48,7 +48,7 @@ will return a default of 16 correct passwords, all of which are actually
 incorrect. This is because Hydra is not seeing the failed login condition and
 therefore stops at 16 '_successful_' attempts.
 
-### BurpSuite to the Rescue
+### Burp Suite to the Rescue
 
 I cracked open BurpSuite and enabled the proxy intercept. Going to the login
 page and adding _admin_ and _password_ to the fields, clicking the login button
@@ -62,7 +62,7 @@ failed
 
 It is this huge amount of code that needs to be included in the Hydra command.
 This is typically something along the lines of
-`unsername=admin&password=password123` but not in this case!
+`username=admin&password=password123` but not in this case!
 Note in the above data I have already replaced the `Password=password` with the
 Hydra version, `Password=^PASS^`. The full Hydra command that produces the
 result is:

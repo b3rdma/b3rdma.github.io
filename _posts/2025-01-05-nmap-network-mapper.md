@@ -3,8 +3,8 @@ title: Nmap Network Mapper Basics
 date: "2025-01-05 21:35:00 +0000"
 author: b3rdma
 categories:
-  - Tools
-  - Network
+  - Networking
+  - Nmap
 tags:
   - nmap
   - enumeration
@@ -69,9 +69,10 @@ sudo nmap -PR -sn 10.10.210.6/24
 {: .nolineno }
 <!-- prettier-ignore-end -->
 
-Check details of the flags; `-PR` means only scan with ARP, `-sn` means scan
-only on local network, no DNS lookup. Use in conjunction with WireShark to
-capture ARP packet details. An alternative is `arp-scan` which is installed.
+Check details of the flags; `-PR` means only scan with ARP, `-sn` disables port
+scanning after host discovery; it is not restricted to local networks. Use in
+conjunction with WireShark to capture ARP packet details. An alternative is
+`arp-scan` which is installed.
 
 ### Nmap host discovery using ICMP
 
@@ -82,10 +83,11 @@ sudo nmap -PE -sn 10.10.210.6/24
 {: .nolineno }
 <!-- prettier-ignore-end -->
 
-This method, `-PE` means only scan with ICMP echo request, `-sn` means scan only
-on local network, no DNS lookup. Downside is that many firewalls block ICMP.
-Consider using ICMP Timestamp or ICMP Address Mask instead. Timestamp requests
-use the Nmap flag `-PP` and address mask requests use the Nmap flag `-PM`.
+This method, `-PE` means only scan with ICMP echo request, `-sn` disables port
+scanning after host discovery; it is not restricted to local networks. Downside
+is that many firewalls block ICMP. Consider using ICMP Timestamp or ICMP Address
+Mask instead. Timestamp requests use the Nmap flag `-PP` and address mask
+requests use the Nmap flag `-PM`.
 
 ### Nmap host discovery using TCP and UDP
 

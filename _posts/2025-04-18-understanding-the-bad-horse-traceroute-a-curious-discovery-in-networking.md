@@ -4,8 +4,8 @@ title: "Understanding the Bad Horse Traceroute: A Curious Discovery in Networkin
 date: "2025-04-18 18:29 +0100"
 author: b3rdma
 description: >-
-  An interesting find and implementation of DNS/reverse DNS for expressing an
-  artistic fun side with otherwise mundane but useful tools
+  How the Bad Horse traceroute uses routing and reverse DNS to turn a network
+  diagnostic tool into a piece of command-line art.
 image: null
 categories:
   - Networking
